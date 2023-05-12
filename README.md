@@ -6,7 +6,7 @@
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ![image](https://github.com/M-L-P/brunch-grub2/assets/69227436/ca96e382-f51a-4b53-bd83-b75cdfa363c8)<br/>
-![image](https://raw.githubusercontent.com/M-L-P/Yours/main/README/1080p.B.big.png)
+
 </details>
 
 ## 🧭Guide⬇️
