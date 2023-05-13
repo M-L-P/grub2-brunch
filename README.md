@@ -35,7 +35,7 @@ One out of three|Case 1|Case 2|Case 3
 --|--|--|--
 Condition|{if it is here}|{if it is somewhere else}|{else}
 Code|txt_grub=/chromeOS/chromeOS.img.grub.txt|#txt_grub=//.img.grub.txt|### copy all text in the file, "img_name.img.grub.txt" <br/>### paste here below|
-What to do|Do nothing|Fill in the path carefully，with `#` deleted here, with `#` added on case 1|copy all text in the file, "img_name.img.grub.txt" and paste here below, with `#` added on case 1
+What to do|Do nothing|Fill in the path carefully; with `#` deleted here; with `#` added on case 1|copy all text in the file, "img_name.img.grub.txt" and paste here below; with `#` added on case 1
 #### Copy in ESP
 - Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
 
@@ -49,4 +49,4 @@ This is [Yours](https://github.com/M-L-P/Yours).
 If you like it and are looking forward to the coming update, you can star it.💫
 
 ## 🎉Credit🎊
-- Many things come from [Brunch Framework](https://github.com/sebanc/brunch);
+- Almost all things come from [Brunch Framework](https://github.com/sebanc/brunch);
