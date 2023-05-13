@@ -1,3 +1,6 @@
+[English](README.md)|[简体中文](自述文件.md)|[繁體中文](繁體中文.md)|...
+--|--|--|--
+
 # brunch-grub2
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
 #### File Tree
