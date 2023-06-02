@@ -28,21 +28,103 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 </details>
 
 ### Already installed
+#### Select a Case.
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
-#### Edit txt_grub.txt
-- Open `zip: EFI/brunch/txt_grub.txt` to edit;
+##### case.txt
+- Open `zip: EFI/brunch/case.txt` to edit;
+<details>
+<summary>🖱️Click to Unfold to see🖱️</summary>
 
-One out of three|Case 1|Case 2|Case 3
---|--|--|--
-Condition|{if it is here}|{if it is somewhere else}|{else}
-Code|txt_grub=/chromeOS/chromeOS.img.grub.txt|#txt_grub=//.img.grub.txt|### copy all text in the file, "img_name.img.grub.txt" <br/>### paste here below|
-What to do|Do nothing|Fill in the path carefully; with `#` deleted here; with `#` added on case 1|copy all text in the file, "img_name.img.grub.txt" and paste here below; with `#` added on case 1
-#### Copy in ESP
-- Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
+```
+CASE=case_1.txt
+#CASE=case_2.txt
+#CASE=case_3.txt
+```
+This is a switch.
+- Switch on with "#" deleted before "CASE";
+- Switch off with "#" added before "CASE";
+- Only one "CASE" can be without "#".
+</details>
+
+##### case 1
+- Open `zip: EFI/brunch/case/case_1.txt` to edit;
+<details>
+<summary>🖱️Click to Unfold to see🖱️</summary>
+
+`txt_grub=/chromeOS/chromeOS.img.grub.txt`
+
+If it is here, do nothing.
+</details>
+
+##### case 2
+- Open `zip: EFI/brunch/case/case_2.txt` to edit;
+<details>
+<summary>🖱️Click to Unfold to see🖱️</summary>
+
+```
+### For example,
+#####
+#txt_grub=/chromeos.img.grub.txt
+#txt_grub=/Users/username/brunch/chromeos.img.grub.txt
+#txt_grub=/brunch/chromeos.img.grub.txt
+```
+```
+txt_grub=//.img.grub.txt
+```
+
+If it is somewhere else, carefully confirm the path.
+</details>
+
+##### case 3
+- Open `zip: EFI/brunch/case/case_3.txt` to edit;
+<details>
+<summary>🖱️Click to Unfold to see🖱️</summary>
+
+```
+### Copy all text in the file, "img_name.img.grub.txt",
+### Paste here below.
+### For examplle,
+```
+```
+menuentry "ChromeOS" --class "brunch" {
+	img_path=//.img
+	img_uuid=
+	search --no-floppy --set=root --file $img_path
+	loopback loop $img_path
+	source (loop,12)/efi/boot/settings.cfg
+	if [ -z $verbose ] -o [ $verbose -eq 0 ]; then
+		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
+			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path \
+			console= vt.global_cursor_default=0 brunch_bootsplash=$brunch_bootsplash quiet
+	else
+		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
+			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
+	fi
+	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
+}
+```
+```
+menuentry "ChromeOS (settings)" --class "brunch-settings" {
+	img_path=//.img
+	img_uuid=
+	search --no-floppy --set=root --file $img_path
+	loopback loop $img_path
+	source (loop,12)/efi/boot/settings.cfg
+	linux (loop,7)/kernel boot=local noresume noswap loglevel=7 options= chromeos_bootsplash= edit_brunch_config=1 \
+		cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
+	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
+}
+```
+
+Else, carefully confirm the code.
+</details>
 
 </details>
+
+#### Copy in ESP
+- Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
 
 ## 📝FAQ❓️
 ### Back to Yours
