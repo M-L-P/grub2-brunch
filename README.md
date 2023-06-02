@@ -43,9 +43,9 @@ CASE=case_1.txt
 #CASE=case_3.txt
 ```
 This is a switch.
-- Switch on with "#" deleted before "CASE";
-- Switch off with "#" added before "CASE";
-- Only one "CASE" can be without "#".
+- Switch on with `#` deleted before `CASE`;
+- Switch off with `#` added before `CASE`;
+- Only one `CASE` can be without `#`.
 </details>
 
 ##### case 1
