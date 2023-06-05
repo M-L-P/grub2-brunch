@@ -1,6 +1,10 @@
 [English](README.md)|[简体中文](自述文件.md)|[繁體中文](繁體中文.md)|...
 --|--|--|--
 
+![GitHub all releases](https://img.shields.io/github/downloads/M-L-P/brunch-grub2/total)
+![GitHub Repo stars](https://img.shields.io/github/stars/M-L-P/brunch-grub2?style=social)
+![GitHub Discussions](https://img.shields.io/github/discussions/M-L-P/brunch-grub2)
+
 # brunch-grub2
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
 #### File Tree
@@ -88,7 +92,7 @@ If it is somewhere else, carefully confirm the path.
 ### For examplle,
 ```
 ```
-menuentry "ChromeOS" --class "brunch" {
+menuentry "chromeOS" --class "brunch" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path
@@ -106,7 +110,7 @@ menuentry "ChromeOS" --class "brunch" {
 }
 ```
 ```
-menuentry "ChromeOS (settings)" --class "brunch-settings" {
+menuentry "chromeOS (settings)" --class "brunch-settings" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path

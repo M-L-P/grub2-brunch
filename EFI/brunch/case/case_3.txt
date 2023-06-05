@@ -7,7 +7,7 @@
 ### Paste here below.
 ### For examplle,
 
-menuentry "ChromeOS" --class "brunch" {
+menuentry "chromeOS" --class "brunch" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path
@@ -24,7 +24,7 @@ menuentry "ChromeOS" --class "brunch" {
 	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
 }
 
-menuentry "ChromeOS (settings)" --class "brunch-settings" {
+menuentry "chromeOS (settings)" --class "brunch-settings" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path
