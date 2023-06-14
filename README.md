@@ -3,7 +3,7 @@
 [![GitHub Discussions](https://img.shields.io/github/discussions/M-L-P/brunch-grub2)](https://github.com/M-L-P/brunch-grub2/discussions)
 ![GitHub Repo stars](https://img.shields.io/github/stars/M-L-P/brunch-grub2?style=social)
 
-[English](README.md)|[简体中文](README/自述文件.md)|[繁體中文](README/繁體中文.md)|...
+[English](README.md)|[简体中文](自述文件.md)|[繁體中文](繁體中文.md)|...
 --|--|--|--
 
 # brunch-grub2
