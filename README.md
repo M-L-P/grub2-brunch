@@ -9,7 +9,7 @@
 # brunch-grub2
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
 #### File Tree
-<img src="README/brunch-grub2.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/brunch-grub2.png">
 
 ## 💻️Preview👀
 
