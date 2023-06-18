@@ -10,11 +10,11 @@
 [English](README.md)|[简体中文](README-自述文件.md)|[繁體中文](README-繁體中文.md)|...
 --|--|--|--
 
-<h1 align="center">brunch-grub2</h1>
+<h1 align="center">grub2-brunch</h1>
 
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
 #### File Tree
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/brunch-grub2.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch.png">
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## 💻️Preview👀

@@ -10,11 +10,11 @@
 [English](README.md)|[简体中文](README-自述文件.md)|[繁體中文](README-繁體中文.md)|...
 --|--|--|--
 
-<h1 align="center">brunch-grub2</h1>
+<h1 align="center">grub2-brunch</h1>
 
 这个是用来双启动,甚至多启动 那些借助 [Brunch 框架](https://github.com/sebanc/brunch) 安装在 非 chromebook 的 chromeOS。
 #### 文件结构树状图
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/brunch-grub2.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch.png">
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## 💻️预览👀
