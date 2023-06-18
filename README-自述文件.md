@@ -1,7 +1,7 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/M-L-P/brunch-grub2)](https://github.com/M-L-P/brunch-grub2/releases/latest)
-[![GitHub all releases](https://img.shields.io/github/downloads/M-L-P/brunch-grub2/total)](https://github.com/M-L-P/brunch-grub2/releases)
-[![GitHub Discussions](https://img.shields.io/github/discussions/M-L-P/brunch-grub2)](https://github.com/M-L-P/brunch-grub2/discussions)
-![GitHub Repo stars](https://img.shields.io/github/stars/M-L-P/brunch-grub2?style=social)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/M-L-P/grub2-brunch)](https://github.com/M-L-P/grub2-brunch/releases/latest)
+[![GitHub all releases](https://img.shields.io/github/downloads/M-L-P/grub2-brunch/total)](https://github.com/M-L-P/grub2-brunch/releases)
+[![GitHub Discussions](https://img.shields.io/github/discussions/M-L-P/grub2-brunch)](https://github.com/M-L-P/grub2-brunch/discussions)
+[![GitHub Repo stars](https://img.shields.io/github/stars/M-L-P/grub2-brunch?style=social)](https://github.com/M-L-P/grub2-brunch/stargazers)
 
 [English](README.md)|[简体中文](README-自述文件.md)|[繁體中文](README-繁體中文.md)|...
 --|--|--|--
