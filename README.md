@@ -94,7 +94,7 @@ If it is somewhere else, carefully confirm the path.
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ```
-### Copy all text in the file, "img_name.img.grub.txt",
+### Copy all text from the file, "img_name.img.grub.txt",
 ### Paste here below.
 ### For examplle,
 ```

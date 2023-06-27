@@ -94,7 +94,7 @@ txt_grub=//.img.grub.txt
 <summary>🖱️点击展开查看🖱️</summary>
 
 ```
-### Copy all text in the file, "img_name.img.grub.txt",
+### Copy all text from the file, "img_name.img.grub.txt",
 ### Paste here below.
 ### For examplle,
 ```
