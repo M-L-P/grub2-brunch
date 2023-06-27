@@ -99,7 +99,7 @@ If it is somewhere else, carefully confirm the path.
 ### For examplle,
 ```
 ```
-menuentry "chromeOS" --class "brunch" {
+menuentry "chromeOS on Brunch" --class "brunch" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path
@@ -117,7 +117,7 @@ menuentry "chromeOS" --class "brunch" {
 }
 ```
 ```
-menuentry "chromeOS (settings)" --class "brunch-settings" {
+menuentry "Brunch Settings" --class "brunch-settings" {
 	img_path=//.img
 	img_uuid=
 	search --no-floppy --set=root --file $img_path
