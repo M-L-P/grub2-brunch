@@ -43,8 +43,8 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
-##### case.txt
-- Open `zip: EFI/brunch/case.txt` to edit;
+##### case.cfg
+- Open `zip: EFI/brunch/grub/case.cfg` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -60,7 +60,7 @@ This is a switch.
 </details>
 
 ##### case 1
-- Open `zip: EFI/brunch/case/case_1.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case_1.txt` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -70,7 +70,7 @@ If it is here, do nothing.
 </details>
 
 ##### case 2
-- Open `zip: EFI/brunch/case/case_2.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case_2.txt` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -89,7 +89,7 @@ If it is somewhere else, carefully confirm the path.
 </details>
 
 ##### case 3
-- Open `zip: EFI/brunch/case/case_3.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case_3.txt` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 

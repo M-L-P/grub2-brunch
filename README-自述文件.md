@@ -43,8 +43,8 @@
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
-##### case.txt
-- 用文本编辑器打开 `zip: EFI/brunch/case.txt` ；
+##### case.cfg
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case.cfg` ；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
@@ -60,7 +60,7 @@ CASE=case_1.txt
 </details>
 
 ##### case 1
-- 用文本编辑器打开 `zip: EFI/brunch/case/case_1.txt`；
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case_1.txt`；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
@@ -70,7 +70,7 @@ CASE=case_1.txt
 </details>
 
 ##### case 2
-- 用文本编辑器打开 `zip: EFI/brunch/case/case_2.txt`；
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case_2.txt`；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
@@ -89,7 +89,7 @@ txt_grub=//.img.grub.txt
 </details>
 
 ##### case 3
-- 用文本编辑器打开 `zip: EFI/brunch/case/case_3.txt`；
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case_3.txt`；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
