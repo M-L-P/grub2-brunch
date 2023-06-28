@@ -14,7 +14,7 @@
 
 這個是用來雙啟動,甚至多啟動 那些借助 [Brunch 框架](https://github.com/sebanc/brunch) 安裝在 非 chromebook 的 chromeOS。
 #### 文件結構樹狀圖
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## 💻️預覽👀
@@ -22,7 +22,7 @@
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
-![image](https://github.com/M-L-P/brunch-grub2/assets/69227436/ca96e382-f51a-4b53-bd83-b75cdfa363c8)<br/>
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p.png">
 </details>
 
 ## 🧭指南⬇️
