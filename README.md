@@ -49,9 +49,9 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ```
-CASE=case_1.txt
-#CASE=case_2.txt
-#CASE=case_3.txt
+CASE=case1-default.txt
+#CASE=case2-custom.txt
+#CASE=case3-menu.lst
 ```
 This is a switch.
 - Switch on with `#` deleted before `CASE`;
@@ -60,7 +60,7 @@ This is a switch.
 </details>
 
 ##### case 1
-- Open `zip: EFI/brunch/grub/case/case_1.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case1-default.txt` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -70,7 +70,7 @@ If it is here, do nothing.
 </details>
 
 ##### case 2
-- Open `zip: EFI/brunch/grub/case/case_2.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case2-custom.txt` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -89,7 +89,7 @@ If it is somewhere else, carefully confirm the path.
 </details>
 
 ##### case 3
-- Open `zip: EFI/brunch/grub/case/case_3.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case3-menu.lst` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -142,7 +142,8 @@ Else, carefully confirm the code.
 This is [Yours](https://github.com/M-L-P/Yours).
 
 ## ⭐Star🌟
-If you like it and are looking forward to the coming update, you can star it.💫
+If you like it and are looking forward to the coming update, you can star it.💫<br/>
+Tell your friends that you have got a good stuff.
 
 ## 🎉Credit🎊
 - Almost all things come from [Brunch Framework](https://github.com/sebanc/brunch);

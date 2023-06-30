@@ -49,9 +49,9 @@
 <summary>🖱️點擊展開查看🖱️</summary>
 
 ```
-CASE=case_1.txt
-#CASE=case_2.txt
-#CASE=case_3.txt
+CASE=case1-default.txt
+#CASE=case2-custom.txt
+#CASE=case3-menu.lst
 ```
 這是一個轉換器，
 - `CASE` 前無 `#` 則啟用；
@@ -60,7 +60,7 @@ CASE=case_1.txt
 </details>
 
 ##### case 1
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case_1.txt`；
+- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case1-default.txt`；
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
@@ -70,7 +70,7 @@ CASE=case_1.txt
 </details>
 
 ##### case 2
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case_2.txt`；
+- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case2-custom.txt`；
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
@@ -89,7 +89,7 @@ txt_grub=//.img.grub.txt
 </details>
 
 ##### case 3
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case_3.txt`；
+- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case3-menu.lst`；
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
@@ -142,7 +142,8 @@ menuentry "Brunch Settings" --class "brunch-settings" {
 這是 [Yours](https://github.com/M-L-P/Yours)。
 
 ## ⭐收藏🌟
-如果你喜歡並且期待未來的更新，你可以點亮星星。💫
+如果你喜歡並且期待未來的更新，你可以點亮星星。💫<br/>
+告訴你的朋友，你得到了個好東西。
 
 ## 🎉來源🎊
 - 幾乎所有文件來自 [Brunch Framework](https://github.com/sebanc/brunch)；
