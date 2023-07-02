@@ -22,7 +22,10 @@
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k-ter.png">
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p-ter.png">
 </details>
 
 ## 🧭指南⬇️
@@ -147,3 +150,5 @@ menuentry "Brunch Settings" --class "brunch-settings" {
 
 ## 🎉來源🎊
 - 幾乎所有文件來自 [Brunch Framework](https://github.com/sebanc/brunch)；
+- Terminal box 來自 [Ventoy](https://github.com/ventoy/Ventoy) 的官方主題；
+- ......

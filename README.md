@@ -22,7 +22,10 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k-ter.png">
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p-ter.png">
 </details>
 
 ## 🧭Guide⬇️
@@ -147,3 +150,5 @@ Tell your friends that you have got a good stuff.
 
 ## 🎉Credit🎊
 - Almost all things come from [Brunch Framework](https://github.com/sebanc/brunch);
+- Terminal box is adapted from the official theme of [Ventoy](https://github.com/ventoy/Ventoy);
+- ......
