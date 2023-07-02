@@ -52,8 +52,8 @@
 <summary>🖱️点击展开查看🖱️</summary>
 
 ```
-CASE=case1-default.txt
-#CASE=case2-custom.txt
+CASE=case1-default.cfg
+#CASE=case2-custom.conf
 #CASE=case3-menu.lst
 ```
 这是一个转换器，
@@ -63,7 +63,7 @@ CASE=case1-default.txt
 </details>
 
 ##### case 1
-- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case1-default.txt`；
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case1-default.cfg`；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 
@@ -73,7 +73,7 @@ CASE=case1-default.txt
 </details>
 
 ##### case 2
-- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case2-custom.txt`；
+- 用文本编辑器打开 `zip: EFI/brunch/grub/case/case2-custom.conf`；
 <details>
 <summary>🖱️点击展开查看🖱️</summary>
 

@@ -52,8 +52,8 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ```
-CASE=case1-default.txt
-#CASE=case2-custom.txt
+CASE=case1-default.cfg
+#CASE=case2-custom.conf
 #CASE=case3-menu.lst
 ```
 This is a switch.
@@ -63,7 +63,7 @@ This is a switch.
 </details>
 
 ##### case 1
-- Open `zip: EFI/brunch/grub/case/case1-default.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case1-default.cfg` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
@@ -73,7 +73,7 @@ If it is here, do nothing.
 </details>
 
 ##### case 2
-- Open `zip: EFI/brunch/grub/case/case2-custom.txt` to edit;
+- Open `zip: EFI/brunch/grub/case/case2-custom.conf` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
