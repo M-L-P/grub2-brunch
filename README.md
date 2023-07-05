@@ -144,8 +144,9 @@ Else, carefully confirm the code.
 - Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
 
 ## 📝FAQ❓️
-### Back to Yours
-This is [Yours](https://github.com/M-L-P/Yours).
+### DinoChrome
+[dino](https://github.com/franeklubi/dino) from [franeklubi](https://github.com/franeklubi)
+- - need CSM mode enabled, it cannot run on only UEFI;
 
 ## ⭐Star🌟
 If you like it and are looking forward to the coming update, you can star it.💫<br/>
@@ -154,4 +155,5 @@ Tell your friends that you have got a good stuff.
 ## 🎉Credit🎊
 - Almost all things come from [Brunch Framework](https://github.com/sebanc/brunch);
 - Terminal box is adapted from the official theme of [Ventoy](https://github.com/ventoy/Ventoy);
+- [dino](https://github.com/franeklubi/dino) from [franeklubi](https://github.com/franeklubi);
 - ......

@@ -144,8 +144,9 @@ menuentry "Brunch Settings" --class "brunch-settings" {
 - 复制文件夹 `zip: EFI/brunch` 到 `ESP: \EFI`；
 
 ## 📝FAQ❓️
-### Back to Yours
-这是 [Yours](https://github.com/M-L-P/Yours)。
+### DinoChrome
+[dino](https://github.com/franeklubi/dino) 来自 [franeklubi](https://github.com/franeklubi)
+- - 需要开启 CSM 模式，纯 UEFI 无法运行。
 
 ## ⭐收藏🌟
 如果你喜欢并且期待未来的更新，你可以点亮星星。💫<br/>
@@ -154,4 +155,5 @@ menuentry "Brunch Settings" --class "brunch-settings" {
 ## 🎉来源🎊
 - 几乎所有文件来自 [Brunch Framework](https://github.com/sebanc/brunch)；
 - Terminal box 来自 [Ventoy](https://github.com/ventoy/Ventoy) 的官方主题；
+- [dino](https://github.com/franeklubi/dino) 来自 [franeklubi](https://github.com/franeklubi)；
 - ......
