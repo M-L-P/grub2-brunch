@@ -50,7 +50,7 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ##### case.cfg
-- Open `zip: EFI/brunch/grub/case.cfg` to edit;
+- Open `zip: EFI/brunch/case.cfg` to edit;
 <details>
 <summary>🖱️Click to Unfold to see🖱️</summary>
 

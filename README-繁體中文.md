@@ -50,7 +50,7 @@
 <summary>🖱️點擊展開查看🖱️</summary>
 
 ##### case.cfg
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case.cfg` ；
+- 用文本編輯器打開 `zip: EFI/brunch/case.cfg` ；
 <details>
 <summary>🖱️點擊展開查看🖱️</summary>
 
