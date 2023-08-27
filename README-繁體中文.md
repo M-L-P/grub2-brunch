@@ -13,6 +13,34 @@
 <h1 align="center">grub2-brunch</h1>
 
 這個是用來雙啟動,甚至多啟動 那些借助 [Brunch 框架](https://github.com/sebanc/brunch) 安裝在 非 chromebook 的 chromeOS。
+#### 特色
+- 圖形界面設置默認的 `.img` 和 `.img.grub.txt` 文件；
+- 使用了 [a1ive](https://github.com/a1ive) 的打過補丁的 [grub](https://github.com/a1ive/grub)，全面支持安全啟動，
+  - 可以啟動任意未簽名的內核；
+- 支持鼠標，支持 PS/2 觸控板；
+- 支持多語言；
+- 圖形界面設置倒計時的時間；
+
+#### 全局按鍵
+
+按鍵|功能
+-|-
+【↑】【↓】|導航；
+【Enter】|進入已選擇的選項；
+【ESC】|返回上一個菜單列表；（主菜單處退出）
+【Delete】|顯示隱藏菜單；
+【F5】|刷新，重新進入 grub2；
+【Ctrl】+【Alt】+【F12】|截屏；（需要固件支持修飾鍵）
+
+#### 鼠標映射
+
+操作|功能
+-|-
+上滑|【↑】
+下滑|【↓】
+左鍵|【Enter】
+右鍵|【ESC】
+
 #### 文件結構樹狀圖
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
 
@@ -23,125 +51,20 @@
 <summary>🖱️點擊展開查看🖱️</summary>
 
 ### 1024x768
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k.png">
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k-ter.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/繁體中文.gif">
 
 #### 1920x1080
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p.png">
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p-ter.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/1080p-menu.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/1080p-settings.png">
 </details>
 
 ## 🧭指南⬇️
-### 還沒安裝
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
 
-#### 使用 Brunch 框架
-- 使用 [Brunch 框架](https://github.com/sebanc/brunch) 安裝 chromeOS；
-- 在 `ext4: /chromeOS` 中生成 `chromeOS.img` ，
-- - `sudo bash chromeos-install.sh -src chromeos_filename.bin -dst .../[ext4_分區卷標]/chromeOS/chromeOS.img -s size`
-#### 復製到 ESP 分區
+### 復製到 ESP 分區
 - 復製文件夾 `zip: EFI/brunch` 到 `ESP: \EFI`；
-</details>
-
-### 已經安裝好了
-#### 選擇 case
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
-
-##### case.cfg
-- 用文本編輯器打開 `zip: EFI/brunch/case.cfg` ；
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
-
-```
-CASE=case1-default.cfg
-#CASE=case2-custom.conf
-#CASE=case3-menu.lst
-```
-這是一個轉換器，
-- `CASE` 前無 `#` 則啟用；
-- `CASE` 前有 `#` 則禁用；
-- 只允許一個 "CASE" 的前面沒有 `#`。
-</details>
-
-##### case 1
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case1-default.cfg`；
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
-
-`txt_grub=/chromeOS/chromeOS.img.grub.txt`
-
-如果路徑正確，就保持原樣。
-</details>
-
-##### case 2
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case2-custom.conf`；
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
-
-```
-### For example,
-#####
-#txt_grub=/chromeos.img.grub.txt
-#txt_grub=/Users/username/brunch/chromeos.img.grub.txt
-#txt_grub=/brunch/chromeos.img.grub.txt
-```
-```
-txt_grub=//.img.grub.txt
-```
-
-若是其他路徑，就認真填寫路徑；
-</details>
-
-##### case 3
-- 用文本編輯器打開 `zip: EFI/brunch/grub/case/case3-menu.lst`；
-<details>
-<summary>🖱️點擊展開查看🖱️</summary>
-
-```
-### Copy all text from the file, "img_name.img.grub.txt",
-### Paste here below.
-### For examplle,
-```
-```
-menuentry "chromeOS on Brunch" --class "brunch" {
-	img_path=//.img
-	img_uuid=
-	search --no-floppy --set=root --file $img_path
-	loopback loop $img_path
-	source (loop,12)/efi/boot/settings.cfg
-	if [ -z $verbose ] -o [ $verbose -eq 0 ]; then
-		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
-			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path \
-			console= vt.global_cursor_default=0 brunch_bootsplash=$brunch_bootsplash quiet
-	else
-		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
-			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
-	fi
-	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
-}
-```
-```
-menuentry "Brunch Settings" --class "brunch-settings" {
-	img_path=//.img
-	img_uuid=
-	search --no-floppy --set=root --file $img_path
-	loopback loop $img_path
-	source (loop,12)/efi/boot/settings.cfg
-	linux (loop,7)/kernel boot=local noresume noswap loglevel=7 options= chromeos_bootsplash= edit_brunch_config=1 \
-		cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
-	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
-}
-```
-
-其他情況，認真填寫代碼。
-</details>
-
-</details>
-
-#### 復製到 ESP 分區
-- 復製文件夾 `zip: EFI/brunch` 到 `ESP: \EFI`；
+### 設置默認文件（參考 gif 動圖）
+- 根據提示，選擇【文件】選項；（參考 gif 動圖）
+- 進入 grub2 的 文件管理器，尋找 `.img` 和 `.img.grub.txt` 文件，並設置為默認；（參考 gif 動圖）
 
 ## 📝FAQ❓️
 ### DinoChrome
@@ -153,7 +76,11 @@ menuentry "Brunch Settings" --class "brunch-settings" {
 告訴你的朋友，你得到了個好東西。
 
 ## 🎉來源🎊
-- 幾乎所有文件來自 [Brunch Framework](https://github.com/sebanc/brunch)；
+- 許多文件改編自 [Brunch Framework](https://github.com/sebanc/brunch)；
+- [grub](https://github.com/a1ive/grub) 來自 [a1ive](https://github.com/a1ive)；
+- grub2 文件管理器的代碼改編自 [a1ive](https://github.com/a1ive) 的 [grub2-filemanager](https://github.com/a1ive/grub2-filemanager)；
 - Terminal box 來自 [Ventoy](https://github.com/ventoy/Ventoy) 的官方主題；
+- 許多圖標來自 [flaticon](https://www.flaticon.com/)；
+- 一些圖標來自 [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) 來自 [franeklubi](https://github.com/franeklubi)；
 - ……

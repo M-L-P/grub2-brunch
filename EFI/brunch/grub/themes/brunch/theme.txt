@@ -16,7 +16,7 @@ terminal-font: "Terminus Regular 12"
 	top = 90%
 	height = 20
 	width = 90%
-	font = "Ubuntu Mono Bold 28"
+	font = "Microsoft YaHei Regular 24"
 	text_color = "#000000"
 	fg_color = "#888888"
 	bg_color = "#ffffff"
@@ -26,26 +26,29 @@ terminal-font: "Terminus Regular 12"
 
 + boot_menu {
 	left = 0
-	width = 500
+	width = 508
 	top = 0%
 	height = 100%
 
-	menu_pixmap_style = "menu/boot_menu_*.png"
+	menu_pixmap_style = "menu/menu_*.png"
 
-	item_font = "Ubuntu Mono Bold 28"
-	item_color = "#eff0f1"
+	item_font = "Microsoft YaHei Regular 24"
+	item_color = "#C0C0C0"
 	item_height = 120
 	item_icon_space = 40
 	item_padding = 0
 	item_spacing = 0
 
-	selected_item_font = "Ubuntu Mono Bold 28"
+	selected_item_font = "Microsoft YaHei Regular 24"
 	selected_item_color= "#eff0f1"
-	selected_item_pixmap_style = "select_*.png"
+	selected_item_pixmap_style = "menu/select_*.png"
 
 	icon_height = 100
 	icon_width = 100
 
-	scrollbar = false
+	scrollbar = true
+	scrollbar_width = 4
+	scrollbar_thumb = "menu/slider_*.png"
+	scrollbar_right_pad = 2
 }
 

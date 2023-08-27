@@ -1,0 +1,40 @@
+desktop-image: "background.png"
+desktop-image-scale-method: "crop"
+desktop-image-h-align: "center"
+title-text: " "
+terminal-box: "terminal/terminal_box_*.png"
+terminal-left: "520"
+terminal-top: "15%"
+terminal-width: "480"
+terminal-height: "70%"
+terminal-border: "0"
+terminal-font: "Terminus Regular 12"
+
++ boot_menu {
+	left = 5%
+	width = 90%
+	top = 10%
+	height = 80%
+
+	menu_pixmap_style = "vtoyfm/menu_*.png"
+
+	item_font = "Microsoft YaHei Regular 24"
+	item_color = "#C0C0C0"  
+	item_height = 60
+  
+	item_spacing = 1
+	item_padding = 1
+
+	selected_item_font = "Microsoft YaHei Regular 24"
+	selected_item_color= "#eff0f1"
+	selected_item_pixmap_style = "vtoyfm/select_*.png"
+
+	item_icon_space = 10
+
+	scrollbar = true
+	scrollbar_width = 10
+	scrollbar_thumb = "vtoyfm/slider_*.png"
+
+	icon_height = 45
+	icon_width = 45
+}

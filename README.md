@@ -13,6 +13,34 @@
 <h1 align="center">grub2-brunch</h1>
 
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
+#### Feature
+- Set default `. img` and `. img. grub. txt` files through graphical interface;
+- Using patched [grub](https://github.com/a1ive/grub) of [a1ive](https://github.com/a1ive), it totally supports secure boot，
+  - It can load any unsigned kernel;
+- Mouse and PS/2 trackpad;
+- Multiple languages;
+- Set the timeout on the graphical interface;
+
+#### Global keys
+
+Key|Function
+-|-
+[↑] [↓] | Navigation;
+[Enter] | Enter the selected entry;
+[ESC] | Returns to the previous menu list; (Exit from the main menu)
+[Delete] | Show hidden menu;
+[F5] | Refresh and re-enter grub2;
+[Ctrl]+[Alt]+[F12] | Screenshot; (Requires firmware support for modifier keys)
+
+#### Mouse mapping
+
+Operation | Function
+-|-
+Slide up | [↑]
+Down | [↓]
+Left click | [Enter]
+Right click | [ESC]
+
 #### File Tree
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
 
@@ -23,125 +51,20 @@ It is used to dual-boot chromeOS, or even multi-boot, which is installed on no c
 <summary>🖱️Click to Unfold to see🖱️</summary>
 
 ### 1024x768
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k.png">
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1k-ter.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/English.gif">
 
 #### 1920x1080
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p.png">
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/1080p-ter.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/1080p-menu.png">
+<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/1080p-settings.png">
 </details>
 
 ## 🧭Guide⬇️
-### Not installed yet
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
 
-#### Using Brunch Framework
-- Install chromeOS by using [Brunch Framework](https://github.com/sebanc/brunch);
-- Create `chromeOS.img` into `ext4: /chromeOS`,
-- - `sudo bash chromeos-install.sh -src chromeos_filename.bin -dst .../[ext4_partition_label]/chromeOS/chromeOS.img -s size`
-#### Copy in ESP
+### Copy in ESP
 - Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
-</details>
-
-### Already installed
-#### Select a Case.
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
-
-##### case.cfg
-- Open `zip: EFI/brunch/case.cfg` to edit;
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
-
-```
-CASE=case1-default.cfg
-#CASE=case2-custom.conf
-#CASE=case3-menu.lst
-```
-This is a switch.
-- Switch on with `#` deleted before `CASE`;
-- Switch off with `#` added before `CASE`;
-- Only one `CASE` can be without `#`.
-</details>
-
-##### case 1
-- Open `zip: EFI/brunch/grub/case/case1-default.cfg` to edit;
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
-
-`txt_grub=/chromeOS/chromeOS.img.grub.txt`
-
-If it is here, do nothing.
-</details>
-
-##### case 2
-- Open `zip: EFI/brunch/grub/case/case2-custom.conf` to edit;
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
-
-```
-### For example,
-#####
-#txt_grub=/chromeos.img.grub.txt
-#txt_grub=/Users/username/brunch/chromeos.img.grub.txt
-#txt_grub=/brunch/chromeos.img.grub.txt
-```
-```
-txt_grub=//.img.grub.txt
-```
-
-If it is somewhere else, carefully confirm the path.
-</details>
-
-##### case 3
-- Open `zip: EFI/brunch/grub/case/case3-menu.lst` to edit;
-<details>
-<summary>🖱️Click to Unfold to see🖱️</summary>
-
-```
-### Copy all text from the file, "img_name.img.grub.txt",
-### Paste here below.
-### For examplle,
-```
-```
-menuentry "chromeOS on Brunch" --class "brunch" {
-	img_path=//.img
-	img_uuid=
-	search --no-floppy --set=root --file $img_path
-	loopback loop $img_path
-	source (loop,12)/efi/boot/settings.cfg
-	if [ -z $verbose ] -o [ $verbose -eq 0 ]; then
-		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
-			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path \
-			console= vt.global_cursor_default=0 brunch_bootsplash=$brunch_bootsplash quiet
-	else
-		linux (loop,7)$kernel boot=local noresume noswap loglevel=7 options=$options chromeos_bootsplash=$chromeos_bootsplash $cmdline_params \
-			cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
-	fi
-	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
-}
-```
-```
-menuentry "Brunch Settings" --class "brunch-settings" {
-	img_path=//.img
-	img_uuid=
-	search --no-floppy --set=root --file $img_path
-	loopback loop $img_path
-	source (loop,12)/efi/boot/settings.cfg
-	linux (loop,7)/kernel boot=local noresume noswap loglevel=7 options= chromeos_bootsplash= edit_brunch_config=1 \
-		cros_secure cros_debug img_uuid=$img_uuid img_path=$img_path
-	initrd (loop,7)/lib/firmware/amd-ucode.img (loop,7)/lib/firmware/intel-ucode.img (loop,7)/initramfs.img
-}
-```
-
-Else, carefully confirm the code.
-</details>
-
-</details>
-
-#### Copy in ESP
-- Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
+### Set default file (refer to gif animation)
+- According to the prompt, select the item - [File]; (refer to gif animation)
+- Enter the file manager of Grub2, and search for the `. img` and `. img. grub. txt` files, and set them as default; (refer to gif animation)
 
 ## 📝FAQ❓️
 ### DinoChrome
@@ -153,7 +76,11 @@ If you like it and are looking forward to the coming update, you can star it.�
 Tell your friends that you have got a good stuff.
 
 ## 🎉Credit🎊
-- Almost all things come from [Brunch Framework](https://github.com/sebanc/brunch);
+- Many files are adapted from [Brunch Framework](https://github.com/sebanc/brunch);
+- [grub](https://github.com/a1ive/grub) from [a1ive](https://github.com/a1ive);
+- The codes of grub2 file manager are adapted from [grub2-filemanager](https://github.com/a1ive/grub2-filemanager) of [a1ive](https://github.com/a1ive)；
 - Terminal box is adapted from the official theme of [Ventoy](https://github.com/ventoy/Ventoy);
+- Many icons from [flaticon](https://www.flaticon.com/)；
+- Some icons from [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) from [franeklubi](https://github.com/franeklubi);
 - ......
