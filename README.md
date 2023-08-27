@@ -14,7 +14,7 @@
 
 It is used to dual-boot chromeOS, or even multi-boot, which is installed on no chromebook by using [Brunch Framework](https://github.com/sebanc/brunch).
 #### Feature
-- Set default `. img` and `. img. grub. txt` files through graphical interface;
+- Set default `.img` and `.img.grub.txt` files through graphical interface;
 - Using patched [grub](https://github.com/a1ive/grub) of [a1ive](https://github.com/a1ive), it totally supports secure boot，
   - It can load any unsigned kernel;
 - Mouse and PS/2 trackpad;
@@ -64,7 +64,7 @@ Right click | [ESC]
 - Copy the folder `zip: EFI/brunch` into `ESP: \EFI`;
 ### Set default file (refer to gif animation)
 - According to the prompt, select the item - [File]; (refer to gif animation)
-- Enter the file manager of Grub2, and search for the `. img` and `. img. grub. txt` files, and set them as default; (refer to gif animation)
+- Enter the file manager of Grub2, and search for the `.img` and `.img.grub.txt` files, and set them as default; (refer to gif animation)
 
 ## 📝FAQ❓️
 ### DinoChrome
