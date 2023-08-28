@@ -83,4 +83,5 @@ Tell your friends that you have got a good stuff.
 - Many icons from [flaticon](https://www.flaticon.com/)；
 - Some icons from [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) from [franeklubi](https://github.com/franeklubi);
+- The .gif cartoon is taken by using Hyper-V and [Screen2Gif](https://github.com/NickeManarin/ScreenToGif);
 - ......

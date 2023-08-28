@@ -83,4 +83,5 @@
 - 許多圖標來自 [flaticon](https://www.flaticon.com/)；
 - 一些圖標來自 [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) 來自 [franeklubi](https://github.com/franeklubi)；
+- .gif 的動態截圖是使用 [Screen2Gif](https://github.com/NickeManarin/ScreenToGif) 對 hyper-V 截取的；
 - ……
