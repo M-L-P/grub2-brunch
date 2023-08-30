@@ -67,6 +67,10 @@
 - 進入 grub2 的 文件管理器，尋找 `.img` 和 `.img.grub.txt` 文件，並設置為默認；（參考 gif 動圖）
 
 ## 📝FAQ❓️
+
+### 安全啟動
+- 需要通過 [Yours-UEFI](https://github.com/M-L-P/Yours-UEFI) （有補丁）啟動 `grub2-brunch.efi`，因為該文件未簽名；
+
 ### DinoChrome
 [dino](https://github.com/franeklubi/dino) 來自 [franeklubi](https://github.com/franeklubi)
 - - 需要開啟 CSM 模式，純 UEFI 無法運行。

@@ -67,6 +67,10 @@ Right click | [ESC]
 - Enter the file manager of Grub2, and search for the `.img` and `.img.grub.txt` files, and set them as default; (refer to gif animation)
 
 ## 📝FAQ❓️
+
+### Secure Boot
+- You should use [Yours-UEFI](https://github.com/M-L-P/Yours-UEFI) (with patch) to load `grub2-brunch.efi` (unsigned).
+
 ### DinoChrome
 [dino](https://github.com/franeklubi/dino) from [franeklubi](https://github.com/franeklubi)
 - - need CSM mode enabled, it cannot run on only UEFI;
