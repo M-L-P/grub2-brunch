@@ -33,7 +33,7 @@ Key|Function
 [ESC] | Returns to the previous menu list; (Exit from the main menu)
 [Delete] | Show hidden menu;
 [F5] | Refresh and re-enter grub2;
-[Ctrl]+[Alt]+[F12] | Screenshot; (Requires firmware support for modifier keys)
+[F10] | Screenshot;
 
 #### Mouse mapping
 
