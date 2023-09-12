@@ -49,12 +49,10 @@ function brunch_settings {
 		else
 			clear_menu
 			theme_vtoyfm
-			if [ -z "${FILE_IMG}" ] -a [ "${FILE_TXT}" ]; then
+			if [ -z "${FILE_IMG}" ]; then
 				echo_noimg
-			elif [ -z "${FILE_TXT}" ] -a [ "${FILE_IMG}" ]; then
-				echo_notxt
-			else
-				echo_noimg
+			fi
+			if [ -z "${FILE_TXT}" ]; then
 				echo_notxt
 			fi
 			grub_fm

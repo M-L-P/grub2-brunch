@@ -1,0 +1,63 @@
+name: 构建
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - '.github/workflows/build.yml'
+      - 'cmdpath/**'
+      - 'grub-mkimage/**'
+      - 'memdisk/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - '.github/workflows/build.yml'
+      - 'cmdpath/**'
+      - 'grub-mkimage/**'
+      - 'memdisk/**'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        repo: [grub2-brunch]
+        type: [brunch]
+
+    name: 构建 ${{ matrix.repo }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: 合成 mendisk
+      working-directory: memdisk
+      run: sudo bash ./打包.sh
+
+    - name: 克隆 grub2
+      run: |
+        git clone https://github.com/M-L-P/grub2.git
+        cd grub2
+        ls -l
+
+    - name: 合成 ${{ matrix.repo }}.efi
+      run: |
+        chmod -R 777 grub2
+        cd grub2
+        mkdir ${{ matrix.repo }}
+        ls -l
+        cp ../grub-mkimage/* ./${{ matrix.repo }}
+        cp ../memdisk/${{ matrix.repo }}.xz ./${{ matrix.repo }}
+        cd ${{ matrix.repo }}
+        ls -l
+        sudo bash ./${{ matrix.repo }}.sh
+
+    - name: 归档 ${{ matrix.repo }}
+      run: |
+        mkdir -p ESP/EFI/${{ matrix.type }}
+        cp ./grub2/${{ matrix.repo }}/${{ matrix.repo }}.efi ESP/EFI/${{ matrix.type }}
+        cp ./cmdpath/* ESP/EFI/${{ matrix.type }}
+
+    - name: 上传到此处
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: ${{ matrix.repo }}
+        path: ESP

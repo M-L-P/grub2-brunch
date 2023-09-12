@@ -1,55 +1,50 @@
 ###############################################################################
-#                                 [lang.lst]
-#                         to list items of languages
+#                                 [mouse.lst]
+#                          to list items of mouse
 ###############################################################################
 
 #==============================================================================
 #####----{function}----
 #------------------------------------------------------------------------------
-function ini_lang {
-	ini_get --set=LANG1 ${SET}/lang.ini ${lang}:语1
-	ini_get --set=LANG2 ${SET}/lang.ini ${lang}:语2
-	ini_get --set=LANG3 ${SET}/lang.ini ${lang}:语3
-}
-#------------------------------------------------------------------------------
-function save_lang {
-	save_env lang
-	ini_lang
-	export lang LANG1 LANG2 LANG3
+function save_mouse {
 	refresh_lang
-	configfile ${SET}/2-2.lang.lst
+	refresh_theme
+	configfile ${SET}/2-5.mouse.lst
 }
 #==============================================================================
-if [ -n "${lang}" ]; then
-	default=${lang}
-else
-	default=Eng
-fi
+default=${SELECTED}
 #==============================================================================
 #####----{back}----
 #------------------------------------------------------------------------------
-menuentry "${MENU_BACK}" --class "echo/back" --id "back" --hotkey "esc" {
-	set SELECTED=lang
+menuentry "${MENU_BACK}" --class "echo/back" --hotkey "esc" {
+	set SELECTED=mouse
 	configfile ${SET}/2.settings.lst
 }
 #==============================================================================
-ini_lang
+
 #==============================================================================
 #####----{items}----
 #------------------------------------------------------------------------------
-menuentry "${LANG1} English" --class "lang/Eng" --id "Eng" {
-	set lang=
-	save_lang
+menuentry "USB ${MENU_MOUSE}${USB_MOUSE}" --class "echo/${USB_MOUSE}" --id "USB" {
+	if [ "on" != "${USB_MOUSE}" ]; then
+		enable_usb
+	else
+		disable_usb
+	fi
+	save_env --file=${cmdpath}/grubenv USB_MOUSE
+	export SELECTED=USB
+	save_mouse
 }
 #------------------------------------------------------------------------------
-menuentry "${LANG2} 简体中文" --class "lang/简" --id "zh_CN" {
-	set lang=zh_CN
-	save_lang
-}
-#------------------------------------------------------------------------------
-menuentry "${LANG3} 繁體中文" --class "lang/繁" --id "zh_TW" {
-	set lang=zh_TW
-	save_lang
+menuentry "PS/2 ${TITLE_TRACKPAD} & ${MENU_MOUSE}${PS2_MOUSE}" --class "echo/${PS2_MOUSE}" --id "PS2" {
+	if [ "on" != "${PS2_MOUSE}" ]; then
+		enable_ps2
+	else
+		disable_ps2
+	fi
+	save_env --file=${cmdpath}/grubenv PS2_MOUSE
+	export SELECTED=PS2
+	save_mouse
 }
 #==============================================================================
 global_environment

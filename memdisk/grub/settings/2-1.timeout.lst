@@ -16,7 +16,7 @@ function ini_timeout {
 }
 #------------------------------------------------------------------------------
 function save_timeout {
-	save_env TIME_OUT
+	save_env --file=${cmdpath}/grubenv TIME_OUT
 	ini_timeout
 	export TIME_OUT TO3 TO5 TO7 TO10 TO15 TO20
 	configfile ${SET}/2-1.timeout.lst
