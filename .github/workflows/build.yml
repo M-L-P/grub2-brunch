@@ -45,7 +45,7 @@ jobs:
         mkdir ${{ matrix.repo }}
         ls -l
         cp ../grub-mkimage/* ./${{ matrix.repo }}
-        cp ../memdisk/${{ matrix.repo }}.xz ./${{ matrix.repo }}
+        cp ../memdisk/memdisk.xz ./${{ matrix.repo }}
         cd ${{ matrix.repo }}
         ls -l
         sudo bash ./${{ matrix.repo }}.sh
