@@ -48,7 +48,7 @@ jobs:
         cp ../memdisk/memdisk.xz ./${{ matrix.repo }}
         cd ${{ matrix.repo }}
         ls -l
-        sudo bash ./${{ matrix.repo }}.sh
+        sudo bash ./grub-mkimage.sh
         sudo mv grub-mkimage.efi ${{ matrix.repo }}.efi
 
     - name: 归档 ${{ matrix.repo }}
