@@ -10,11 +10,11 @@ time=$(cat ../mod_list/time.txt)
 var=$(cat ../mod_list/var.txt)
 grubfm=$(cat ../mod_list/grubfm.txt)
 ../grub-mkimage \
--m grub2-fyde.xz \
+-m memdisk.xz \
 -d "../x86_64-efi" \
--c grub2-fyde.cfg \
+-c grub-mkimage.cfg \
 -p "(memdisk)/grub" \
--o grub2-fyde.efi \
+-o grub-mkimage.efi \
 -O x86_64-efi \
 $boot \
 $device \

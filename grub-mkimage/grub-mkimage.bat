@@ -11,11 +11,11 @@ set /p time= < ..\mod_list\time.txt
 set /p var= < ..\mod_list\var.txt
 set /p grubfm= < ..\mod_list\grubfm.txt
 ..\grub-mkimage.exe ^
--m grub2-fyde.xz ^
+-m memdisk.xz ^
 -d ..\x86_64-efi ^
--c grub2-fyde.cfg ^
+-c grub-mkimage.cfg ^
 -p "(memdisk)/grub" ^
--o grub2-fyde.efi ^
+-o grub-mkimage.efi ^
 -O x86_64-efi ^
 %boot% ^
 %device% ^
