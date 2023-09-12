@@ -30,7 +30,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: 合成 mendisk
       working-directory: memdisk
-      run: sudo bash ./打包.sh
+      run: sudo bash ./package.sh
 
     - name: 克隆 grub2
       run: |
