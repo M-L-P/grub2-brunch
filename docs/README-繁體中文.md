@@ -57,7 +57,7 @@
 ### 1024x768
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/繁體中文.gif">
 
-#### 1920x1080
+### 1920x1080
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/1080p-menu.png">
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/繁體中文/1080p-settings.png">
 </details>

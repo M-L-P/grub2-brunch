@@ -57,7 +57,7 @@ Right click | [ESC]
 ### 1024x768
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/English.gif">
 
-#### 1920x1080
+### 1920x1080
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/1080p-menu.png">
 <img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/English/1080p-settings.png">
 </details>
