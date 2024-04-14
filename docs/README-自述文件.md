@@ -46,7 +46,7 @@
 右键|【ESC】
 
 #### 文件结构树状图
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
+<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## 💻️预览👀
@@ -55,11 +55,11 @@
 <summary>🖱️点击展开查看🖱️</summary>
 
 ### 1024x768
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/简体中文.gif">
+<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/简体中文.gif">
 
 ### 1920x1080
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-menu.png">
-<img src="https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-settings.png">
+<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-menu.png">
+<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-settings.png">
 </details>
 
 ## 🧭指南⬇️
