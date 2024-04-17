@@ -91,4 +91,5 @@
 - 一些图标来自 [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) 来自 [franeklubi](https://github.com/franeklubi)；
 - .gif 的动态截图是使用 [Screen2Gif](https://github.com/NickeManarin/ScreenToGif) 对 hyper-V 截取的；
+- 六音的 github 加速器，用于显示图片，https://gh.sixyin.com/ ；
 - ……
