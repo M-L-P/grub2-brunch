@@ -1,3 +1,24 @@
+# Good News
+Dear friends:<br/>
+	I delved into it in my spare time and have successfully installed chromeOS onto an LVM logical volume,<br/>
+and it booted up successfully.<br/>
+	Compared to the advantages of .img files, LVM logical volumes bypass the file system layer directly,<br/>
+enabling better performance improvements, as AI has told me.<br/>
+In my personal opinion, .img files are prone to being accidentally deleted by the rm command,<br/>
+whereas LVM logical volumes are more secure and less likely to be damaged by other operating systems;<br/>
+ The new version supports the following new features: <br/>
+- The graphical interface allows for setting kernel command line parameters.<br/>
+Compared to the terminal-based operation method of Brunch, this interface is more aesthetically pleasing and does not require a reboot.
+- Boot ChromeOS on the LVM logical volume;
+- Install chromeOS with a graphical interface onto an LVM logical volume; (the version after next)
+- Operate LVM logical volumes via graphical interface; (the version after next)
+- Graphical interface: Update the Brunch framework; (the version after next)
+- Graphical interface updated to slot A|B; (the version after next)
+	However, I've had less spare time recently, so I haven't finished organizing and uploading them yet.<br/>
+I'm still designing the theme for the new interface and struggling with some layout and icon issues;
+	I'm the only one maintaining it with no one to help me, so you'll have to wait for several weeks or even months. Cheer me on.
+
+
 [grub2-brunch](https://github.com/M-L-P/grub2-brunch)|[grub2-fyde](https://github.com/M-L-P/grub2-fyde)|[grub2-androidx86](https://github.com/M-L-P/grub2-androidx86)
 -|-|-
 

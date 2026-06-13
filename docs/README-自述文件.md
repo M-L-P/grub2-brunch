@@ -1,3 +1,19 @@
+# 好消息
+亲爱的朋友们：<br/>
+	我用业余时间钻研了一下，已经成功将 chromeOS 安装到 lvm 逻辑卷上，并且成功启动。<br/>
+	相比 .img 文件的优势，lvm 逻辑卷直接绕过文件系统层面，能够带来更好的性能的提升，AI是这样告诉我的。<br/>
+我个人认为，.img文件容易被 rm 命令误删，而 lvm 逻辑卷更加安全，不容易被其他操作系统破坏；<br/>
+	新版本支持以下新特性：<br/>
+- 图形界面设置内核命令行参数，相比 brunch 在终端操作的方式，界面更加美观，而且不需要重启；
+- 启动 lvm 逻辑卷上的 chromeOS；
+- 图形界面安装 chromeOS 到 lvm 逻辑卷；（下下个版本）
+- 图形界面操作 lvm 逻辑卷；（下下个版本）
+- 图形界面 更新 brunch 框架；（下下个版本）
+- 图形界面更新到 A|B 槽位；（下下个版本）
+	不过，最近业余时间变少了，还没整理好上传，还在设计新界面的主题，还在纠结部分排版和图标；<br/>
+	只有我一个人维护，没人帮我，所以你们要等几个星期甚至几个月了。为我加油吧。
+
+
 [grub2-brunch](https://github.com/M-L-P/grub2-brunch)|[grub2-fyde](https://github.com/M-L-P/grub2-fyde)|[grub2-androidx86](https://github.com/M-L-P/grub2-androidx86)
 -|-|-
 
@@ -46,7 +62,7 @@
 右键|【ESC】
 
 #### 文件结构树状图
-<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
+<img src="https://github.moeyy.xyz/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/grub2-brunch.png">
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## 💻️预览👀
@@ -55,11 +71,11 @@
 <summary>🖱️点击展开查看🖱️</summary>
 
 ### 1024x768
-<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/简体中文.gif">
+<img src="https://github.moeyy.xyz/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/简体中文.gif">
 
 ### 1920x1080
-<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-menu.png">
-<img src="https://gh.sixyin.com/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-settings.png">
+<img src="https://github.moeyy.xyz/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-menu.png">
+<img src="https://github.moeyy.xyz/https://raw.githubusercontent.com/M-L-P/.github/main/screenshots/grub2-brunch/简体中文/1080p-settings.png">
 </details>
 
 ## 🧭指南⬇️
@@ -91,5 +107,5 @@
 - 一些图标来自 [iconfinder](https://www.iconfinder.com/)；
 - [dino](https://github.com/franeklubi/dino) 来自 [franeklubi](https://github.com/franeklubi)；
 - .gif 的动态截图是使用 [Screen2Gif](https://github.com/NickeManarin/ScreenToGif) 对 hyper-V 截取的；
-- 六音的 github 加速器，用于显示图片，https://gh.sixyin.com/ ；
+- moeyy 的 github 加速器，用于显示图片，https://github.moeyy.xyz/ ；
 - ……
